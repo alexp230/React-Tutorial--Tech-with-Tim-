@@ -1,20 +1,23 @@
+import {Routes, Route} from "react-router-dom"
+
 import './App.css'
+
 import MovieCard from "./Components/MovieCard"
 import Home from "./Pages/Home"
+import Favorites from "./Pages/Favorites"
 
 function App()
 {
 
   return(
-    <>
-      <Home />
-    </>
+    <main className="main-content">
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/favorites" element={<Favorites />}/>
+      </Routes>
+    </main>
+    
   )
-}
-
-function Text()
-{
-  
 }
 
 

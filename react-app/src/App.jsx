@@ -1,6 +1,6 @@
 import {Routes, Route} from "react-router-dom"
 
-import './App.css'
+import './css/App.css'
 
 import MovieCard from "./Components/MovieCard"
 import Home from "./Pages/Home"
@@ -20,7 +20,7 @@ function App()
           <Route path="/favorites" element={<Favorites />}/>
         </Routes>
       </main>
-      
+
     </div>
     
   )
